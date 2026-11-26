@@ -3,7 +3,7 @@ import Background from './components/Background';
 import { useIntersectionObserver } from './hooks/useIntersectionObserver';
 import { useParallax } from './hooks/useParallax';
 import { PROJECT_DATA, SKILLS_DATA, PROCESS_DATA, EXPERIMENTS_DATA, MASTERY_DATA, NAV_LINKS } from './constants';
-import { Github, Linkedin, ArrowUpRight, ArrowRight, FlaskConical, Circle, Globe, Instagram, MessageCircle, ArrowUp, Download, ArrowDown, MousePointer2, Scan, Clock, MapPin, Radio, Terminal, Cpu, Layout, Lock, AlertCircle, CheckCircle, Printer, Network, Activity } from 'lucide-react';
+import { GitBranch, Briefcase, ArrowUpRight, ArrowRight, FlaskConical, Circle, Globe, Camera, MessageCircle, ArrowUp, Download, ArrowDown, MousePointer2, Scan, Clock, MapPin, Radio, Terminal, Cpu, Layout, Lock, AlertCircle, CheckCircle, Printer, Network, Activity } from 'lucide-react';
 import { Project } from './types';
 
 // --- NEW ANIMATION COMPONENT ---
@@ -971,9 +971,9 @@ const App: React.FC = () => {
                  {/* --- REVAMPED SOCIAL ICONS GRID --- */}
                  <div className="w-full mt-12 grid grid-cols-1 sm:grid-cols-2 gap-4">
                      {[
-                         { name: 'Github', url: 'https://github.com/eddy-mfon', icon: Github, detail: '/EDDY-MFON' },
-                         { name: 'LinkedIn', url: 'https://linkedin.com/in/edidiong-mfon', icon: Linkedin, detail: '/IN/EDIDIONG' },
-                         { name: 'Instagram', url: 'https://instagram.com/templareddy', icon: Instagram, detail: '@TEMPLAREDDY' },
+                         { name: 'Github', url: 'https://github.com/eddy-mfon', icon: GitBranch, detail: '/EDDY-MFON' },
+                         { name: 'LinkedIn', url: 'https://linkedin.com/in/edidiong-mfon', icon: Briefcase, detail: '/IN/EDIDIONG' },
+                         { name: 'Instagram', url: 'https://instagram.com/templareddy', icon: Camera, detail: '@TEMPLAREDDY' },
                          { name: 'WhatsApp', url: 'https://wa.me/2348078391769', icon: MessageCircle, detail: '+234-8078391769' }
                      ].map((social, idx) => (
                          <Reveal key={social.name} variant="zoom" delay={idx * 100} className="w-full">
